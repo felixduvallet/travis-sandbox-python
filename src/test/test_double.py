@@ -14,5 +14,9 @@ class TestCase(unittest.TestCase):
         ret = double(2)
         self.assertEqual(4, ret)
 
+    def test_bad_math(self):
+        ret = double(3)
+        self.assertEqual(4, ret)
+
 if __name__ == '__main__':
     unittest.main()
