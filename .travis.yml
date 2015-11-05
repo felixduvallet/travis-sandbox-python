@@ -8,3 +8,6 @@ script: nosetests --config=nose.cfg
 
 after_success:
   - codecov
+
+
+sudo: false  # Be explicit.
