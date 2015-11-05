@@ -1,4 +1,10 @@
 language: python
 
+before_install:
+  - pip install codecov
+
 # command to run tests
 script: nosetests --with-doctest --with-xunit
+
+after_success:
+  - codecov
