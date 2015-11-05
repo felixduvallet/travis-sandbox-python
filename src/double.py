@@ -9,3 +9,14 @@ def double(x):
     :return:
     """
     return 2 * x
+
+def triple(x):
+    """
+
+    >>> triple(3)
+    9
+
+    :param x:
+    :return: 3 * x
+    """
+    return 3 * x
