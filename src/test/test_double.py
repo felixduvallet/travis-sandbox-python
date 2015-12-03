@@ -3,6 +3,7 @@ __author__ = 'felixd'
 import unittest
 
 from double import double
+import numpy as np
 
 class TestCase(unittest.TestCase):
 
