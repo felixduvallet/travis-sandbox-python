@@ -1,13 +1,15 @@
 language: python
+sudo: false  # Be explicit.
 
 before_install:
   - pip install -r pip-requirements.txt
+
+install:
+  - pip install coveralls
 
 # command to run tests
 script: nosetests --config=nose.cfg
 
 after_success:
   - codecov
-
-
-sudo: false  # Be explicit.
+  - coveralls
