@@ -8,7 +8,9 @@ install:
   - pip install coveralls
 
 # command to run tests
-script: nosetests --config=nose.cfg
+script:
+ - nosetests --config=nose.cfg
+ - nosetests --with-coverage --cover-package=elementary
 
 after_success:
   - codecov
