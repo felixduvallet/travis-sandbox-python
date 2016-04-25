@@ -10,9 +10,9 @@ install:
 # command to run tests
 script:
  - nosetests --config=nose.cfg
- - nosetests --with-coverage --cover-package=elementary
+##  - nosetests --with-coverage --cover-package=elementary
 
 after_success:
+  - codeclimate-test-reporter
   - codecov
   - coveralls
-  - codeclimate-test-reporter
